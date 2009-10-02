@@ -1,0 +1,47 @@
+
+2/3/2009 - Worked on installing on the RBE machine.
+
+* Downloaded the python2.6 installer from the python.org site
+  (python.com is a porn site.  careful!)  Installed to the default
+  location of C:\Python26
+
+* Added C:\Python26 to the system Path environmental variable (control
+  panels -> system -> ?)
+
+* Downloaded latest release of BeautifulSoup (3.?) and installed (cd
+  BeautifulSoup-<version>; python setup.py install)
+
+* Placed dazzlefix.py and dazzle_layout.lyt in
+  C:\Users\Volunteer\Documents, opened a command prompt and cd'ed to
+  there.)
+
+* Download dazzle file from booksku and placed there as well.
+
+* Now you're set to go:
+  'python dazzlefix.py -b 10 -p <booksku password> -l 100
+  <order-N.xml>'
+
+* First attempt there was a weird non-ascii character in the xml file
+  that caused the xml parser to choke.  It tells you the line and
+  column that the problem was encountered.  Opened the file with
+  Notepad++ and saw that it was a crazy symbol in someone's email
+  address.  Changed it to '??', and reran.
+
+* Now the beautiful soup is erorring out.  Downgraded to version ??
+  (3.6 or something?  released early summer of '08) and reran.
+  Produces <order-N.fixed.xml>
+
+* Works.
+
+* Now open Dazzle (from start menu).  It should use the
+  c:\users\volunteers\documents\dazzle_layout.lyt by default, open the
+  layout if it doesn't.
+
+* Select File -> Print from external file, select XML in the dropdown
+  of file types, then select the <order-N.fixed.xml> file produced
+  above.
+
+* It will re-write the data in the layout, and you will see a preview
+  of the first order behind the print dialog.  If it looks good, you
+  can print.  CAREFUL, THIS IS WHEN ENDICIA DEBITS OUR ACCOUNT, NO
+  REFUNDS.

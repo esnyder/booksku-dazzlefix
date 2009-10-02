@@ -1,0 +1,15 @@
+The Rogue Book Exchange is a free bookstore in Medford Oregon (see 
+http://www.roguebooks.org)
+
+They pay their rent by selling a small percentage of the books donated
+via amazon and other online used book venues (the rest of the donated
+books go out on the shelves for anyone who wants them.)  RBE has used
+Booksku (see http://booksku.com) as their inventory management and sales
+system since inception.  At some point standing around at the postoffice 
+all the time got old, and so they started using endicia as a print-your-own-postage
+service.  There is a handy XML format to pass data from booksku to endicia
+to print postage and address labels.  Unfortunately, it doesn't quite 
+work right.
+
+This project contains the script written to massage the dazzle formatted 
+file that booksku generates into a form that makes endicia happier.

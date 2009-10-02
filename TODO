@@ -1,0 +1,15 @@
+
+ISSUES:
+
+* Want the shipping category (standard, expedited) on the packing slip
+   along with the condition notes.
+
+* Need to *never* choke and die on a dazzle xml file.
+
+* What to do if some of the condition notes are not retrievable?
+
+* Still don't understand international shipping.
+
+* Need some way to set the zip of where the packages will mail from
+   different from the return address on the label.
+
